@@ -1,0 +1,454 @@
+.cabecalho {
+    width: 100%;
+    height: 100px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: transparent; /* Define o fundo como transparente por padrão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.cabecalho-opaco {
+    background-color: #fff; /* Muda o fundo para branco quando o usuário rola para baixo */
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo__img {
+    width: auto;
+    margin-left: -95px;
+}
+
+.logo__img img {
+    height: 70px;
+    width: auto;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: -1.5rem;
+}
+
+.logo h2 {
+    color: rgba(33, 33, 33, 0.778);
+    font-size:larger;
+}
+
+.menu {
+    display: flex;
+    margin-right: -15vh;
+    column-gap: 3.0rem;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.nav__item a {
+    color: var(--heading-color);
+    font-weight: 600 !important;
+    cursor: pointer;
+}
+
+.nav__item a:hover {
+    background-image: linear-gradient(to right, #49AB8E, #7675A9, #7AC481);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    column-gap: -1.5rem;
+}
+
+/* Estilos do botão de menu */
+.menu-toggle {
+    display: none;
+    background: #49AB8E;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position:fixed;
+    right: 20px;
+    
+}
+
+
+.menu-icon {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #121111;
+    position:relative;
+    margin-top: 2px;
+    
+}
+
+
+.menu-icon:before,
+.menu-icon:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #000000;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:before {
+    top: -7px;
+    left: 0.5px;
+}
+
+.menu-icon:after {
+    bottom: -7px;
+    left: 0.5px;
+}
+
+
+
+.menu-toggle.open .menu-icon {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.open .menu-icon:before {
+    transform: translateY(7px) rotate(90deg);
+}
+
+.menu-toggle.open .menu-icon:after {
+    transform: translateY(-7px) rotate(90deg);
+}
+
+/* Estilos do menu para telas menores */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navigation.open {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.navigation.open .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+}
+
+
+
+/* Adicionando regras de mídia para tornar o cabeçalho responsivo */
+@media only screen and (max-width: 768px) {
+  .cabecalho {
+    height: auto;
+    line-height: normal;
+  }
+  
+  .menu li {
+    margin-bottom: 10px; /* espaço entre os menus */
+  }
+
+  .logo__img img {
+    height: 80px;
+    width: auto;
+    line-height: normal;
+  }
+
+  .logo h2 {
+    font-size: 16px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navigation {
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navigation.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+}
+
+/* Adicione regras de mídia para telas extra pequenas (por exemplo, smartphones em modo retrato) */
+@media only screen and (max-width: 320px) {
+    .cabecalho {
+        height: auto;
+        line-height: normal;
+      }
+      
+      .menu li {
+        margin-bottom: 10px; /* espaço entre os menus */
+      }
+    
+      .logo__img img {
+        height: 80px;
+        width: auto;
+        line-height: normal;
+      }
+    
+      .logo h2 {
+        font-size: 16px;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    
+      .navigation {
+        position: relative;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+      .navigation.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+      }
+}
+
+/* Adicione regras de mídia para telas pequenas (por exemplo, smartphones em modo paisagem ou tablets em modo retrato) */
+@media only screen and (maxn-width: 350px) and (max-width: 780px) {
+    .cabecalho {
+        height: auto;
+        line-height: normal;
+      }
+      
+      .menu li {
+        margin-bottom: 10px; /* espaço entre os menus */
+      }
+    
+      .logo__img img {
+        height: 80px;
+        width: auto;
+        line-height: normal;
+        margin-left: -180px;
+      }
+    
+      .logo h2 {
+        font-size: 16px;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    
+      .navigation {
+        position: relative;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+      .navigation.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+      }
+}
+
+/* Adicione regras de mídia para telas de tamanho médio (por exemplo, tablets em modo paisagem) */
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+    .cabecalho {
+        height: auto;
+        line-height: normal;
+      }
+      
+      .menu li {
+        margin-bottom: 10px; /* espaço entre os menus */
+      }
+    
+      .logo__img img {
+        height: 80px;
+        width: auto;
+        line-height: normal;
+        margin-left: -280px;
+      }
+    
+      .logo h2 {
+        font-size: 16px;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    
+      .navigation {
+        position: relative;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+      .navigation.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+      }
+}
+
+@media only screen and (min-width:991px) and (max-width: 1024px) {
+  .cabecalho {
+      height: auto;
+      line-height: normal;
+    }
+    
+    .menu li {
+      margin-bottom: 10px; /* espaço entre os menus */
+    }
+  
+    .logo__img img {
+      height: 80px;
+      width: auto;
+      line-height: normal;
+      margin-left: -80px;
+    }
+  
+    .logo h2 {
+      font-size: 16px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navigation {
+      position: relative;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .navigation.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 1000;
+    }
+}
+
+/* Adicione regras de mídia para telas grandes (por exemplo, laptops e desktops com resoluções padrão) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .cabecalho {
+        height: auto;
+        line-height: normal;
+      }
+      
+      .menu li {
+        margin-bottom: 10px; /* espaço entre os menus */
+      }
+    
+      .logo__img img {
+        height: 80px;
+        width: auto;
+        line-height: normal;
+        margin-left: -80px;
+        
+      }
+    
+      .logo h2 {
+        font-size: 16px;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    
+      .navigation {
+        position: relative;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+      .navigation.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+      }
+}
+
+/* Adicione regras de mídia para telas extra grandes (por exemplo, monitores de alta resolução) */
+@media only screen and (min-width: 1441px) {
+    /* Estilos para telas extra grandes */
+}
+

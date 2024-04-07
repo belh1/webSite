@@ -1,0 +1,99 @@
+#ajuda {
+  text-align: center;
+  padding: 40px;
+}
+
+.sectionP__title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  margin-top: -20px;
+}
+
+.perguntas__lista {
+  max-width: 800px;
+  margin: 10px auto;
+  margin-top: 50px;
+}
+
+.pergunta {
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(75, 198, 205, 0.929);
+  transition: background-color 0.3s, transform 0.3s;
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.pergunta:hover {
+  background-color: #ffffff66;
+  transform: translateY(-3px);
+}
+
+.pergunta__titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.pergunta__titulo h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pergunta__titulo span {
+  font-size: 20px;
+  color: #5f12ef;
+}
+
+.pergunta__resposta {
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilização para a imagem de ponto de interrogação */
+.duvida {
+  width: 30px;
+  height: auto;
+  margin-right: 12px;
+}
+
+/* Estilização para o contêiner da seção de perguntas frequentes */
+.PerguntaF_container {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.55);
+  height: 600px;
+  margin-left: 110px;
+}
+
+/* Estilização para os botões de categorias */
+.categoria-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.categoria-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #30947c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categoria-buttons button:hover {
+  background-color: #267e68;
+}

@@ -1,0 +1,116 @@
+#sobre {
+  text-align: center;
+  padding: 30px;
+}
+
+
+.swiper-slide {
+  filter: grayscale(100%); /*deixa a imagem da direita em preto e branco*/
+}
+
+.swiper-slide-next {
+  filter: grayscale(0%); /*deixa a imagem do meio colorida*/
+}
+
+.carousel-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: -120px;
+  margin-left: 240px;
+  position: relative;
+}
+
+.sobre__top {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.55);
+  height: 280px;
+  margin-top: 10px;
+  margin-left: 110px;
+}
+
+.sobre__top h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  margin-top: -10px;
+}
+
+.image-container {
+  width: 292px; /* Largura fixa */
+  height: 400px; /* Altura fixa */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover; /* Preenche o contêiner sem cortar a imagem */
+}
+.swiper-slide {
+  border: 4px solid #000; /* Define uma borda sólida preta com 2px de largura */
+}
+
+/* Botões de navegação */
+
+.btnL,
+.btnR {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:  rgba(123, 183, 208, 0.8);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%; /* Tornando os botões de navegação mais redondos */
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.btnL {
+  left: 10px;
+}
+
+.btnR {
+  right: 10px;
+}
+
+/* Ícones dos botões */
+
+.btnL svg,
+.btnR svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Ícones */
+.btnL svg,
+.btnR svg {
+  width: 20px;
+  height: 20px;
+}
+
+.text-overlay {
+  position: absolute;
+  font-size: 25px;
+  top: 90%; /* Move o retângulo para baixo 50% da altura da página */
+  transform: translateY(-50%); 
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #070707; /* Cor do texto */
+  background: #fbfafa;
+  text-shadow: 2px 2px 4px rgb(152, 154, 160);
+}
+
+.text-overlay p {
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Adiciona um pouco de espaço interno ao redor do texto */
+}
+

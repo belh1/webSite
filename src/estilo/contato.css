@@ -1,0 +1,123 @@
+
+.Contato__logo img {
+    width: 60px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 135px;
+
+}
+
+.Contato__logo .title {
+    font-size: 2rem; /* Tamanho da fonte */
+    color: rgba(50, 79, 151, 0.736);
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+.informacoes_contato h3{
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    margin-top: -50px;
+    margin-left: 400px;
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-left: -25vh;
+}
+
+.iconI{
+    width: 30px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: -430px;
+   
+}
+
+.iconin{
+    width: 30px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 10px;
+}
+
+.iconface{
+    width: 30px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 10px;
+}
+
+
+.Contatos{
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+    margin-bottom: 40px; /* Espaçamento inferior */
+    margin-top: -150px;
+    margin-left: 650px;
+    
+}
+
+.iconC{
+    width: 30px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+   margin-top: 20px;
+}
+
+.iconH{
+    width: 30px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: -2px;
+    margin-left: -40PX;
+}
+
+.iconL{
+    width: 30px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: -20px;
+    margin-left: -40px;
+}
+
+.Contatos p{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -30px;
+   
+}
+
+.Contatos p1{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: -40px;
+   
+}
+.Contatos p3{
+    margin-left: 10px;
+}
+
+.hora{
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+.local{
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 1.2rem;
+}
+
+
+
+.vertical-line {
+    border-left: 1px solid #000000; /* Especifica uma borda sólida à esquerda */
+    height: 150px; /* Define a altura da linha vertical */
+    margin-left: 600px;
+    margin-top: -75px;
+}
+
+.contato_container{
+  /*  background-color: rgba(255, 255, 255, 0.55);*/
+    height: 300px; /* Defina a altura */
+    width: auto; /* Ocupe toda a largura disponível */
+    margin-top: 30px;
+    
+}
